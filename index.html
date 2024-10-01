@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Tree Visualization</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="container">
+    <h1>Binary Tree Visualization</h1>
+
+    <div id="input-area" class="input-area">
+      <label for="data">Enter data:</label>
+      <input type="text" id="data" value="">
+      <button onclick="insert()">Insert</button>
+      <button onclick="deleteNode()">Delete</button>
+      <button onclick="searchNode()">Search</button>
+      <span class="error" id="error"></span>
+    </div>
+
+    <div id="tree">
+      <svg width="500" height="300" id="svg-lines"></svg>
+    </div>
+
+  </div>
+
+  <!-- Audio element for sound effect -->
+  <audio id="insertSound">
+    <source src="button-202966.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Binary Search Tree Information Section -->
+  <div id="bst-info">
+    <h3>About Binary Search Trees (BST)</h3>
+    <p>
+      A Binary Search Tree (BST) is a binary tree where each node has at most two children,
+      known as the left child and the right child. It follows the order property where the
+      values in the left subtree are less than the node, and the values in the right subtree
+      are greater than the node.
+    </p>
+    <p>
+      BST supports efficient searching, insertion, and deletion operations. Inserting a new
+      node involves comparing the data with the root and recursively inserting it into the
+      appropriate subtree. Deleting a node can be complex depending on its children, but
+      generally involves connecting its parent directly to its child or finding a successor
+      node.
+    </p>
+    <p>
+      Traversal methods like Inorder, Preorder, and Postorder are used to visit nodes in
+      different orders, offering flexibility in data retrieval and processing.
+    </p>
+    <h3>Operations:</h3>
+    <ol>
+      <li><strong>Insertion:</strong> Inserting a new node into the BST.</li>
+      <li><strong>Deletion:</strong> Removing a node from the BST, handling cases based on node's children.</li>
+      <li><strong>Search:</strong> Finding a node with a specific value in the BST.</li>
+    </ol>
+    <h3>Traversal Types:</h3>
+    <ol>
+      <li><strong>Preorder:</strong> Visit the node, then the left subtree, then the right subtree.</li>
+      <li><strong>Inorder:</strong> Visit the left subtree, then the node, then the right subtree (gives nodes in sorted order).</li>
+      <li><strong>Postorder:</strong> Visit the left subtree, then the right subtree, then the node.</li>
+    </ol>
+
+    <h3>Examples:</h3>
+
+    <h4>Preorder Traversal Example:</h4>
+    <p>
+      Preorder traversal visits the node first, then its left subtree, and then its right subtree.
+      For example, consider the tree below:
+    </p>
+    <img src="preorder-traversal_360.gif" alt="Preorder Traversal Example" class="tree-image">
+    
+
+    <h4>Inorder Traversal Example:</h4>
+    <p>
+      Inorder traversal visits the left subtree first, then the node, and then the right subtree,
+      resulting in nodes sorted in ascending order. For example, consider the tree below:
+    </p>
+    <img src="inorder-traversal_360.gif" alt="Inorder Traversal Example" class="tree-image">
+   
+
+    <h4>Postorder Traversal Example:</h4>
+    <p>
+      Postorder traversal visits the left subtree, then the right subtree, and finally the node
+      itself. For example, consider the tree below:
+    </p>
+    <img src="postorder-traversal_360.gif" alt="Postorder Traversal Example" class="tree-image">
+   
+  </div>
+  <script src="binaryTree.js"></script>
+</body>
+</html>

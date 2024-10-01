@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 20px; /* Added padding to body */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+#container {
+  max-width: 800px; /* Adjusted container width */
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 8px;
+  overflow: auto; /* Added overflow for scrolling */
+}
+
+h1, h2, h3 {
+  color: #4CAF50;
+}
+
+#tree {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  position: relative;
+}
+
+.node {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  position: absolute;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.highlighted {
+  background-color: yellow;
+}
+
+.input-area {
+  margin-top: 20px;
+}
+
+.input-area input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.input-area button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-area button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Binary Search Tree Information Section */
+#bst-info {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 14px;
+  overflow: auto; /* Added overflow for scrolling */
+}
+
+#bst-info h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+#bst-info p {
+  margin-bottom: 15px;
+}
+
+#bst-info ol {
+  margin-top: 10px;
+}
+
+#bst-info li {
+  margin-bottom: 5px;
+}
+
+.tree-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
